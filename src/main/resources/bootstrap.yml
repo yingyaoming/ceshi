@@ -9,7 +9,7 @@ spring:
     password: mysql
     driver-class-name: com.mysql.cj.jdbc.Driver
   application:
-    name: SpringCloud-content-api
+    name: SpringCloud-content-api-api
   profiles:
     active: dev
   cloud:
