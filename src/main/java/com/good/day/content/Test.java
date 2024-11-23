@@ -15,7 +15,7 @@ public class Test {
         //System.out.println(HttpUtil.get("http://localhost:63051/api/course/improve/get"));
         long end = System.currentTimeMillis();
         System.out.println(end - begin);
-        System.out.println("修改");
+        System.out.println("分支1");
 
         // 读取输入
         /*Scanner scanner = new Scanner(System.in);
