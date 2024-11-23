@@ -1,0 +1,42 @@
+server:
+  port: 63051
+  servlet:
+    context-path: /api
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.101.65:3306/xc148_content?serverTimezone=UTC&userUnicode=true&useSSL=false&
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: SpringCloud-content
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 192.168.101.65:8848
+      discovery:
+        namespace: dev148
+        group: xuecheng-plus-project
+      config:
+        namespace: dev148
+        group: xuecheng-plus-project
+        file-extension: yaml
+        refresh-enabled: true
+        extension-configs:
+          - data-id: content-service-dev.yaml
+            group: xuecheng-plus-project
+            refresh: true
+        shared-configs:
+          - data-id: logging-${spring.profiles.active}.yaml
+            group: xuecheng-plus-common
+            refresh: true
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # 全局逻辑删除的实体字段名
+      logic-delete-value: 1 # 逻辑已删除值（默认为 1）
+      logic-not-delete-value: 0 # 逻辑未删除值（默认为 0）
