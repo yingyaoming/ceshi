@@ -8,16 +8,17 @@ import java.util.Scanner;
 @Slf4j
 public class Test {
     public static void main(String[] args) {
-        /*long begin = System.currentTimeMillis();
+        long begin = System.currentTimeMillis();
         for (int i = 0; i < 10; i++) {
             System.out.println(HttpUtil.get("http://localhost:63051/api/course/improve/get"));
         }
         //System.out.println(HttpUtil.get("http://localhost:63051/api/course/improve/get"));
         long end = System.currentTimeMillis();
-        System.out.println(end - begin);*/
+        System.out.println(end - begin);
+        System.out.println("修改");
 
         // 读取输入
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         System.out.print("请输入一个整数（int类型）: ");
         int number = scanner.nextInt();
 
@@ -26,7 +27,7 @@ public class Test {
 
         // 输出结果
         System.out.println("对应的2进制是: " + Integer.toBinaryString(number));
-        System.out.println("总共有 " + count + " 个1");
+        System.out.println("总共有 " + count + " 个1");*/
     }
 
 
