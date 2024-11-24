@@ -29,6 +29,7 @@ public class Test {
         System.out.println("对应的2进制是: " + Integer.toBinaryString(number));
         System.out.println("总共有 " + count + " 个1");*/
         System.out.println("测试冲突1");
+        System.out.println("测试冲突分支2");
     }
 
 
