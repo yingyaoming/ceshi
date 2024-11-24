@@ -32,6 +32,7 @@ public class Test {
         System.out.println("测试冲突分支2");
         System.out.println("测试冲突分支2修改");
         System.out.println("测试冲突分支2修改1");
+        System.out.println("测试冲突分支2修改2");
     }
 
 
